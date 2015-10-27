@@ -1,0 +1,6 @@
+C:\Users\Edvin\Documents\GitHub\PG3300\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Edvin\Documents\GitHub\PG3300\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Edvin\Documents\GitHub\PG3300\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Edvin\Documents\GitHub\PG3300\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Edvin\Documents\GitHub\PG3300\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Edvin\Documents\GitHub\PG3300\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
