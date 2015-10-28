@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace ConsoleApplication1
@@ -9,15 +8,12 @@ namespace ConsoleApplication1
 		public Coord TailEndCoord { get; set; }
 		public Coord HeadCoord { get; set; }
 		public Coord NewHeadCoord { get; set; }
-		public Direction Direction { get; set; }
+
 		
 		public Snake(List<Coord> tailCoords)
 		{
 			FillTail(tailCoords);
-			Direction = new Direction();	
 		}
-
-		protected Snake(){}
 
 		public void FillTail(List<Coord> tailCoords)
 		{
@@ -78,7 +74,6 @@ namespace ConsoleApplication1
 			}
             return true;
 		}
-
 
 		public void ExtendSnakeTail(List<Coord> tailCoords)
 		{

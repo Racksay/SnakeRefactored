@@ -61,15 +61,15 @@ namespace ConsoleApplication1
                     GameIsPlaying = Player.SelfCollisionTest(TailCoordsList, AppleEaten);
 					if (!GameIsPlaying) continue;
 
-					Renderer.DrawCharAtLoc(Player.HeadCoord, '0');
+					Renderer.Render(Player.HeadCoord, '0');
 
 					if (!AppleEaten)
-						Renderer.DrawCharAtLoc(Player.TailEndCoord, ' ');
+						Renderer.Render(Player.TailEndCoord, ' ');
 					else
 						AppleEaten = true;
 			
 					Player.ExtendSnakeTail(TailCoordsList);
-					Renderer.DrawCharAtLoc(Player.NewHeadCoord, '@');
+					Renderer.Render(Player.NewHeadCoord, '@');
 					Direction.LastDirection = Direction.NewDirection;
 
 				}
@@ -84,14 +84,23 @@ namespace ConsoleApplication1
 				GameIsPlaying = Input.Quit();
 			else if (Input.Pause())
 				Paused = !Paused;
-			else if (Input.Up(Direction) == Direction.Dir.Up)
-				Direction.NewDirection = Input.Up(Direction);
-			else if (Input.Down(Direction) == Direction.Dir.Down)
-				Direction.NewDirection = Input.Down(Direction);
-			else if (Input.Left(Direction) == Direction.Dir.Left)
-				Direction.NewDirection = Input.Left(Direction);
-			else if (Input.Right(Direction) == Direction.Dir.Right)
-				Direction.NewDirection = Input.Right(Direction);	
+			else if (Input.Up(Direction))
+				Direction.SetDirectionUp();
+			else if (Input.Down(Direction))
+				Direction.SetDirectionDown();
+			else if (Input.Left(Direction))
+				Direction.SetDirectionLeft();
+			else if (Input.Right(Direction))
+				Direction.SetDirectionRight();
+		}
+
+		public void InitConsole()
+		{
+			Console.CursorVisible = false;
+			Console.Title = "Westerdals Oslo ACT - SNAKE";
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.SetCursorPosition(10, 10);
+			Console.Write("@");
 		}
 
 		public static void Main()

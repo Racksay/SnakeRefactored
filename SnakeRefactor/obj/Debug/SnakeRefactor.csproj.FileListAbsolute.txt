@@ -21,3 +21,9 @@ c:\users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactor\o
 c:\users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactor\bin\Debug\ConsoleApplication1.exe
 c:\users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactor\bin\Debug\ConsoleApplication1.pdb
 c:\users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactor\obj\Debug\SnakeRefactor.csprojResolveAssemblyReference.cache
+C:\Users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactored\SnakeRefactor\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactored\SnakeRefactor\obj\Debug\ConsoleApplication1.exe
+C:\Users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactored\SnakeRefactor\obj\Debug\ConsoleApplication1.pdb
+C:\Users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactored\SnakeRefactor\bin\Debug\ConsoleApplication1.exe
+C:\Users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactored\SnakeRefactor\bin\Debug\ConsoleApplication1.pdb
+C:\Users\edvin\Google Drive\Programmvarearkitektur\SnakeRefactor\SnakeRefactored\SnakeRefactor\obj\Debug\SnakeRefactor.csprojResolveAssemblyReference.cache

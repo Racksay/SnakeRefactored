@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace ConsoleApplication1
 {
@@ -16,8 +15,8 @@ namespace ConsoleApplication1
 		public PlayField(List<Coord> tailCoords)
 		{
 			SetSnakeField();
-			Apple = new Apple();
-			Apple.SetAppleOnField(tailCoords, Width, Height);
+			Apple = new Apple(_renderer, this);
+			Apple.SetAppleOnField(tailCoords);
 
 		}
 
@@ -28,18 +27,18 @@ namespace ConsoleApplication1
 			Width = Console.WindowWidth;
 			Height = Console.WindowHeight;
 
-		    _renderer.InitConsole();
+		    InitConsole();
 		}
 		public bool AppleCollisionCheck(List<Coord> tailCoords, Coord newHeadCoord)
 		{
-			if (newHeadCoord.X == Apple.AppleCoord.X && newHeadCoord.Y == Apple.AppleCoord.Y)
+			if (newHeadCoord.X == Apple.AppleCoordinate.X && newHeadCoord.Y == Apple.AppleCoordinate.Y)
 			{
 				if (tailCoords.Count + 1 >= Height * Width)
 					// No more room to place apples -- game over.
 					Environment.Exit(0);
 				else
 				{
-					return Apple.SetAppleOnField(tailCoords, Width, Height);
+					return Apple.SetAppleOnField(tailCoords);
 				}
 			}
 			return false;

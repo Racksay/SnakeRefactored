@@ -1,35 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication1
 {
-	public class Apple : PlayField
+	public class Apple
 	{
-		public Coord AppleCoord { get; set; }
-		private readonly Random _random = new Random();
-		private readonly FieldRenderer _renderer = new FieldRenderer();
+		private static readonly Random Random = new Random();
+		public Coord AppleCoordinate { get { return _appleCoordinate; } }
 
-		public Apple()
+		private readonly Coord _appleCoordinate;
+		private readonly Renderer _renderer;
+		private readonly int _playFieldWidth;
+		private readonly int _playFieldHeight;
+
+		public Apple(Renderer renderer, PlayField playField)
 		{
-			AppleCoord = new Coord();
+			_renderer = renderer;
+			_appleCoordinate = new Coord();
+			_playFieldHeight = playField.Height;
+			_playFieldWidth = playField.Width;
 		}
 
-		public bool SetAppleOnField(List<Coord> tailCoords, int width, int height)
+		public bool SetAppleOnField(List<Coord> tailCoords)
 		{
-			while (true)
+			var isValidAppleCoordinate = false;
+			while (!isValidAppleCoordinate)
 			{
-				AppleCoord.X = _random.Next(0, width);
-				AppleCoord.Y = _random.Next(0, height);
+				_appleCoordinate.X = Random.Next(0, _playFieldWidth);
+				_appleCoordinate.Y = Random.Next(0, _playFieldHeight);
 
-				var freeSpot = tailCoords.All(i => i.X != AppleCoord.X || i.Y != AppleCoord.Y);
-				if (!freeSpot) continue;
-
-				_renderer.DrawCharAtLoc(AppleCoord, '$');
-
-				return true;
+				isValidAppleCoordinate = tailCoords.All(i => i.X != _appleCoordinate.X || i.Y != _appleCoordinate.Y);
+			
 			}
+			_renderer.Render(_appleCoordinate, '$');
+			return true;
 		}
 	}
 }
