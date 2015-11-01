@@ -14,7 +14,7 @@ namespace ConsoleApplication1
 		private PlayField PlayField { get; set; }
 		private Snake Player { get; set; }
 		private Stopwatch Tick { get; set; }
-        private GameRenderer Renderer { get; set; }
+        private SnakeRenderer Renderer { get; set; }
 		private Direction Direction { get; set; }
 		private Input Input { get; set; }
 
@@ -30,7 +30,7 @@ namespace ConsoleApplication1
 			PlayField = new PlayField(TailCoordsList);
 
 			Tick  = new Stopwatch();
-			Renderer = new GameRenderer();
+			Renderer = new SnakeRenderer();
 
 			Player = new Snake(TailCoordsList);
 			Direction = new Direction();

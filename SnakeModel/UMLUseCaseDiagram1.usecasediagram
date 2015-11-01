@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fa135e6c-36e1-4419-abe1-ee3bfb1dd835" name="UMLUseCaseDiagram1" linkedPackageId="e8d31bb7-dad5-4a3f-9c38-35512ed45258" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="98bf1d5e-59b2-4d19-a07b-8b713c949f61">
+      <profileInstance Id="31d96552-8dbd-4a87-b742-ef7818644695" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1a1994ea-95e6-4175-b766-b409f0bee6ab">
+      <profileInstance Id="e15ea3f4-88e1-404b-90f9-e42d6d32066e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0f524afa-9578-490e-90ba-e0eb422d15bb" name="Bakery" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20721ef1-3d8e-4cee-bbcf-2ebf49939dad" />
+        <targetEnds>
+          <association Id="069cc217-4e2f-40e2-9c10-7e05536c10ee" isDerived="false" sourceEndRoleName="Bakery" targetEndRoleName="Start Baking" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2f477910-b4b7-490d-a564-9071cbad0ab2" LastKnownName="Start Baking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01d48ec2-2509-49bf-ae05-d8076bfd8df7" name="Bakery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9ab8ae72-24f9-45a6-ac5f-62aaaeaa59a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ffc40ff1-8794-45b8-9bfd-79dc6347c1f5" name="Start Baking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a59d58d-25ab-4717-96bc-8ab734372446" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="941594d4-3536-45a8-ae16-2eda09b18da4" />
+          </association>
+          <association Id="8f37d1f6-62b3-44f1-acfb-19ee588f41f9" isDerived="false" sourceEndRoleName="Bakery" targetEndRoleName="SellCookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b42b2959-701d-4aa8-95ef-3402ea1ccfa4" LastKnownName="SellCookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c797c21-c956-4786-b1d5-807ae4abac3f" name="Bakery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bbc4b91d-efb5-4078-9baa-b57a02155216" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a84c2a74-5ab4-4c6e-9874-77004ab98ba6" name="SellCookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="81655a7f-bfc1-4458-8df0-2d08a38f16ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="83ea3d80-f62b-4479-bed8-adf0f7348ed5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2f477910-b4b7-490d-a564-9071cbad0ab2" name="Start Baking" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b6ff6e61-6f8f-454c-b379-591c1f2e089a" />
+        <targetEnds>
+          <association Id="540269c8-8095-44b7-8751-107ee0e1d722" isDerived="false" sourceEndRoleName="Start Baking" targetEndRoleName="Chocolate Cookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4e7cf0e3-e788-47c5-960c-d59663b33535" LastKnownName="Chocolate Cookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69eac569-33de-4df5-8e2f-fce4286a8a70" name="Start Baking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="573868a1-5280-4bff-954b-569b17a48918" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd973c1f-131c-4480-ac08-87c9f91039b8" name="Chocolate Cookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d08230c2-67ba-48fb-8ca7-5ca4fedc4751" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5ae712d6-0faf-4066-9a0e-ceab3f4b7033" />
+          </association>
+          <association Id="1e107b71-ebe0-483c-826e-80b99af7044e" isDerived="false" sourceEndRoleName="Start Baking" targetEndRoleName="Shards of Glass Cookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f02923f9-f4c9-441b-9350-791bad3e9bc6" LastKnownName="Shards of Glass Cookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1a1781ff-236e-4671-8d8f-a37c60f93033" name="Start Baking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a9e56bce-a494-43fa-b304-7309f6a3a388" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="120a6405-1900-43e4-8fd9-938294f6d179" name="Shards of Glass Cookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c1ec28d0-0ca3-4fbb-8d4a-4b5575645e8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a8a40b9-5d16-4ca4-bf32-8a9537ecf6f8" />
+          </association>
+          <association Id="e0e30ba0-31f6-4a4f-8d41-7af429685293" isDerived="false" sourceEndRoleName="Start Baking" targetEndRoleName="Raisin Cookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2034ad44-e1f5-4374-ac47-419a9193553b" LastKnownName="Raisin Cookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66fa0e0a-de9f-43c5-93b1-3d111ec6c9db" name="Start Baking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="87246851-1c7b-4dd3-8c28-cf8fc7c37143" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="567e7664-9b34-4c92-be57-fc1ff5f40650" name="Raisin Cookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="97d6384f-d6f2-48e4-ac11-3b8e6ade4a67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="273d3647-1b28-4aa1-8c68-015f32993951" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b42b2959-701d-4aa8-95ef-3402ea1ccfa4" name="SellCookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c46b86ac-4ca1-4d9e-a531-3aeeb87f1ae9" />
+        <suppliersInternal>
+          <dependency Id="ec303100-6742-4e70-bc11-a0e13d95ab15">
+            <actorMoniker Id="8ce09fd4-e37e-4dbc-b321-2a2a2a863d1d" LastKnownName="Customer" />
+            <elementDefinition Id="2281bc62-b273-4f7b-a687-fd95b93b2c2a" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e7cf0e3-e788-47c5-960c-d59663b33535" name="Chocolate Cookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a6c2b716-babd-42e5-9245-06f50eead00e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f02923f9-f4c9-441b-9350-791bad3e9bc6" name="Shards of Glass Cookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6890a54-c391-4465-89de-7773536e2c4d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2034ad44-e1f5-4374-ac47-419a9193553b" name="Raisin Cookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="91a11733-715c-4c02-80df-a248083e2b2b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="185a3f24-9edd-4b11-a6ae-a7c265e85e66" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="816bc27e-2d9b-4650-b049-d2140c789706" />
+        <targetEnds>
+          <association Id="66179143-bc1d-4f04-9f13-81fe26d9a351" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="GrabCookie" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="83446ef3-0995-41c9-95e9-8debce28b6ec" LastKnownName="GrabCookie" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a891cd5f-b5c0-424c-9559-eb44f12a8f97" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6f702ae7-a09b-452b-83fd-9c92bf79edda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7f0fb22-5c30-483b-a9b7-1121970d8b4d" name="GrabCookie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="64db806f-80f2-4539-93f6-598c96ccb3b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="46f7fb41-a1da-442b-8751-8a1dff82adf9" />
+          </association>
+          <association Id="b9c128f8-d0d9-4ae7-8a02-18fabf1550b3" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="GetName" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f485844c-9545-43b0-bd11-7b7ce80c8cf3" LastKnownName="GetName" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="529579a1-55a6-423e-8732-ee0fa3a8cb75" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="570aaa0d-5a5f-47b1-b39f-7db960c75e43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b62a76ac-87dc-4c66-a991-569b41f43cdc" name="GetName" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9701b64-f270-4cbe-95bf-9e4c7709afa4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b2d9900-9fc9-442c-be90-986f6a664c56" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="83446ef3-0995-41c9-95e9-8debce28b6ec" name="GrabCookie" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c1ec30b-a50c-459c-9859-51271d07c795" />
+        <suppliersInternal>
+          <dependency Id="047345e6-9097-4372-ac7d-1f1d24548399">
+            <actorMoniker Id="0f524afa-9578-490e-90ba-e0eb422d15bb" LastKnownName="Bakery" />
+            <elementDefinition Id="a107fa70-1c32-458a-be2e-fc46d8f9e2fe" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f485844c-9545-43b0-bd11-7b7ce80c8cf3" name="GetName" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="48204136-0424-4caa-87a4-15c758dbd44c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="8ce09fd4-e37e-4dbc-b321-2a2a2a863d1d" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c201cfb-5701-49b9-aa98-5118b7798bd0" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e8d31bb7-dad5-4a3f-9c38-35512ed45258" name="SnakeModel">
+    <elementDefinition Id="47c9e6e2-128b-4eba-b71c-8fb2121ba851" />
+  </package>
+</useCaseModelRoot>
