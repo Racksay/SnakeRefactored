@@ -62,17 +62,9 @@ namespace ConsoleApplication1
 		// Death by accidental self-cannibalism.
 		public bool SelfCollisionTest(List<Coord> tailCoords, bool appleEaten)
 		{
-			if (!appleEaten)
-			{
-				tailCoords.RemoveAt(0);
-				foreach (Coord x in tailCoords)
-					if (x.X == NewHeadCoord.X && x.Y == NewHeadCoord.Y)
-					{
-						// Death by accidental self-cannibalism.
-						return false;
-					}
-			}
-            return true;
+			if (appleEaten) return true;
+			tailCoords.RemoveAt(0);
+			return tailCoords.All(x => x.X != NewHeadCoord.X || x.Y != NewHeadCoord.Y);
 		}
 
 		public void ExtendSnakeTail(List<Coord> tailCoords)

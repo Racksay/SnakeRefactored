@@ -26,30 +26,22 @@ namespace ConsoleApplication1
 
 		public bool Up(Direction direction)
 		{
-			if (KeyInfo.Key == ConsoleKey.UpArrow && direction.LastDirection != Direction.Dir.Down)
-				return true;
-			return false;
+			return KeyInfo.Key == ConsoleKey.UpArrow && direction.LastDirection != Direction.Dir.Down;
 		}
 
 		public bool Down(Direction direction)
 		{
-			if (KeyInfo.Key == ConsoleKey.DownArrow && direction.LastDirection != Direction.Dir.Up)
-				return true;
-			return false;
+			return KeyInfo.Key == ConsoleKey.DownArrow && direction.LastDirection != Direction.Dir.Up;
 		}
 
 		public bool Right(Direction direction)
 		{
-			if (KeyInfo.Key == ConsoleKey.RightArrow && direction.LastDirection != Direction.Dir.Left)
-				return true;
-			return false;
+			return KeyInfo.Key == ConsoleKey.RightArrow && direction.LastDirection != Direction.Dir.Left;
 		}
 
 		public bool Left(Direction direction)
 		{
-			if (KeyInfo.Key == ConsoleKey.LeftArrow && direction.LastDirection != Direction.Dir.Right)
-				return true;
-			return false;
+			return KeyInfo.Key == ConsoleKey.LeftArrow && direction.LastDirection != Direction.Dir.Right;
 		}
 	}
 }
